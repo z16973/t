@@ -68,8 +68,9 @@ EOF
 # export LKL_HIJACK_NET_GATEWAY="10.99.254.1"
 # export LKL_HIJACK_OFFLOAD="0x9983"
 
+/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json &
 /root/rinetd -f -c /root/config-port.conf raw eth0 &
 
 
 # Run V2Ray
-/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json &
+
